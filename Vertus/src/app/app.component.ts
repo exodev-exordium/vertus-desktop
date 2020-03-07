@@ -24,8 +24,20 @@ export class AppComponent implements OnInit {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
     });
+
+    if (window.navigator.userAgent.includes('Vertus') ||
+        window.navigator.userAgent.includes('Electron')) {
+      console.log('Found Vertus or Electron UserAgent.');
+      this.changeBase();
+    } else {
+      console.error('Did not find Vertus or Electron UserAgent.');
+    }
   }
 
   ngOnInit() {
+  }
+
+  changeBase() {
+    document.getElementsByTagName("base")[0].setAttribute("href", "./");
   }
 }
