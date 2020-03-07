@@ -1,11 +1,39 @@
 {
   "name": "vertus-desktop",
-  "productName": "Vertus",
   "version": "1.0.0",
+  "productName": "Vertus",
   "description": "An open source terminal, ssh, and sftp-client for desktop platforms, made with electronjs, ionic, and capacitor. ",
   "main": "index.js",
   "scripts": {
     "electron:start": "electron ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exordium-dev/vertus-desktop/exordium-desktop.git"
+  },
+  "author": "Odyssey <odyssey@exordium.dev> (https://exordium.dev)",
+  "bugs": {
+    "url": "https://github.com/exordium-dev/vertus-desktop/issues"
+  },
+  "build": {
+    "appID": "dev.exordium.vertus",
+    "productName": "Vertus by Exordium",
+    "copyright": "Exordium 2020",
+    "asar": true,
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "exordium-dev",
+        "repo": "vertus-desktop"
+      }
+    ],
+    "win": {
+      "target": [
+        "nsis",
+        "zip"
+      ],
+      "icon": "assets/icons/ ..."
+    }
   },
   "dependencies": {
     "@capacitor/electron": "^1.5.1",
@@ -27,6 +55,5 @@
     "sftp",
     "client"
   ],
-  "author": "tvOdyssey <odyssey@exordium.dev> (https://exordium.dev/)",
   "license": "ISC"
 }
