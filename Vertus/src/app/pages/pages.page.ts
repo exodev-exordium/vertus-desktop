@@ -8,8 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class PagesPage implements OnInit {
 
   public selectedIndexPages = 0;
+  public selectedIndexSettings = 0;
 
-  public pages = [
+  public mainPages = [
     {
       title: 'Dashboard',
       url: '/pages/dashboard',
@@ -20,7 +21,11 @@ export class PagesPage implements OnInit {
       url: '/pages/settings',
       icon: 'cog'
     }
-  ]
+  ];
+
+  public settingsPages = [
+
+  ];
 
   constructor() { }
 
