@@ -1,0 +1,11 @@
+{
+  "appId": "dev.exordium.vertus",
+  "appName": "Vertus",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {},
+  "electron": {
+    "appendUserAgent": "Vertus"
+  }
+}

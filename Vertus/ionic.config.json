@@ -1,0 +1,7 @@
+{
+  "name": "Vertus",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
