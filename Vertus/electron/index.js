@@ -1,5 +1,7 @@
 const { app, BrowserWindow, Menu } = require('electron');
+const log = require('electron-log')
 const isDevMode = require('electron-is-dev');
+const updateElectron = require('electron-updater')
 const { CapacitorSplashScreen, configCapacitor } = require('@capacitor/electron');
 
 const path = require('path');
@@ -31,6 +33,8 @@ const menuTemplateDev = [
 async function createWindow () {
   // Define our main window size
   mainWindow = new BrowserWindow({
+    title: "Vertus",
+    titleBarStyle: 'hiddenInset',
     height: 920,
     width: 1600,
     show: false,
