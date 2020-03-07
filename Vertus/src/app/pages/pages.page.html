@@ -1,14 +1,14 @@
-<ion-split-pane contentId="pages-content">
-  <ion-menu contentId="pages-content" type="push">
+<ion-split-pane contentId="pages-content" when="(min-width: 745px)">
+  <ion-menu contentId="pages-content" type="push" style="min-width: 250px; max-width: 330px">
     <ion-content>
 
       <ion-list id="pages-list">
 
         <ion-list-header>
-          Vertus
+          Vertus (0.1.0)
         </ion-list-header>
         <ion-note>
-          0.1.0
+          <code>terminal</code>, <code>ssh</code>, and <code>sftp-client</code>.
         </ion-note>
 
         <ion-menu-toggle auto-hide="false" *ngFor="let p of mainPages; let i = index">
