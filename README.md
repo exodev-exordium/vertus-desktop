@@ -12,7 +12,7 @@ More information regarding building `Ionic 5`, and `Capacitor` for `Electron` ca
 
 ### Testing
 
-When it comes to testing this is quite simple, we just run a basic capacitor command `npx cap open electron` after [building](#Building) for ionic.
+When it comes to testing this is quite simple, we just run a basic capacitor command `npx cap open electron` after [building](#building) for ionic.
 
 ## Collaborators
 
