@@ -4,13 +4,21 @@ An open source terminal, ssh, and sftp-client for desktop platforms, made with `
 
 ## Features
 
-- n/a
+- [ ] `electron-updater`, for automatic detecting, downloading and installing of new updates released on our [public GitHub](https://github.com/exordium-dev/vertus-desktop/releases) repo.
 
-### Building
+## Documentation
+
+Due to the fact we are using so many different resources and frameworks for this project, the documentation can get extensive. Just after one day working on this project I noticed there were going to be a ton of little things I would forget. So, for my knowledge, here are some documentation regarding different features of this application. If more documentation is needed for those trying out this program, feel free to create an issue and recommend some changes.
+
+#### Electron
+
+More information regarding any specific `electron` code can be found within our [/docs](docs/ELECTRON.md) folder.
+
+#### Building
 
 More information regarding building `Ionic 5`, and `Capacitor` for `Electron` can be found under our [/docs](docs/BUILDING.md) folder.
 
-### Testing
+#### Testing
 
 When it comes to testing this is quite simple, we just run a basic capacitor command `npx cap open electron` after [building](#building) for ionic.
 
@@ -26,4 +34,6 @@ The Exordium development team:
 
 ## Contact
 
-- n/a
+Contacting the Exordium Development team is pretty easy, you can either join our [discord server](https://discord.exordium.dev), visit the [contact page](https://exordium.dev/contact) on our website or send us an email.
+
+- :envelope: [vertus.dev@exordium.dev](mailto:vertus.dev@exordium.dev)
