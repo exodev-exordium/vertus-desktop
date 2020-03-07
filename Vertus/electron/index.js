@@ -1,10 +1,29 @@
+/*
+
+Vertus <vertus.dev@exordium.dev> (https://vertus.exordium.dev/)
+Application Version: 0.1.x
+
+=====
+
+tvOdyssey <odyssey@exordium.dev> (https://github.com/tvOdyssey)
+Created 0648 2020-03-07
+
+*/
+
+// Electron Modules
 const { app, BrowserWindow, Menu } = require('electron');
 const log = require('electron-log')
 const isDevMode = require('electron-is-dev');
 const updateElectron = require('electron-updater')
+
+// Capacitor Modules
 const { CapacitorSplashScreen, configCapacitor } = require('@capacitor/electron');
 
+// Source Modules
 const path = require('path');
+
+// Logger
+Object.assign(console, log.functions);
 
 // Place holders for our windows so they don't get garbage collected.
 let mainWindow = null;
