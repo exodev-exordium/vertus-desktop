@@ -1,7 +1,8 @@
 {
-  "name": "capacitor-app",
+  "name": "vertus-desktop",
+  "productName": "Vertus",
   "version": "1.0.0",
-  "description": "An Amazing Capacitor App",
+  "description": "An open source terminal, ssh, and sftp-client for desktop platforms, made with electronjs, ionic, and capacitor. ",
   "main": "index.js",
   "scripts": {
     "electron:start": "electron ./"
@@ -15,8 +16,14 @@
   },
   "keywords": [
     "capacitor",
-    "electron"
+    "electron",
+    "vertus",
+    "ssh",
+    "terminal",
+    "cmd",
+    "sftp",
+    "client"
   ],
-  "author": "",
+  "author": "tvOdyssey <odyssey@exordium.dev> (https://exordium.dev/)",
   "license": "ISC"
 }
