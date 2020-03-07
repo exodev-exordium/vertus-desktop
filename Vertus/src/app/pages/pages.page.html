@@ -2,11 +2,26 @@
   <ion-menu contentId="pages-content" type="push">
     <ion-content>
 
-      <h1>Vertus</h1>
+      <ion-list id="pages-list">
 
-      <ion-list id="inbox-list">
+        <ion-list-header>
+          Vertus
+        </ion-list-header>
+        <ion-note>
+          0.1.0
+        </ion-note>
+
         <ion-menu-toggle auto-hide="false" *ngFor="let p of mainPages; let i = index">
-          <ion-item (click)="selectedIndexPages = i" routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" [class.selected]="selectedIndexPages == i">
+          <ion-item (click)="selectedIndexPages = i; selectedIndexSettings = -1;" routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" [class.selected]="selectedIndexPages == i">
+            <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
+            <ion-label>{{ p.title }}</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+
+      <ion-list id="settings-list">
+        <ion-menu-toggle auto-hide="false" *ngFor="let p of settingsPages; let i = index">
+          <ion-item (click)="selectedIndexSettings = i; selectedIndexPages = -1;" routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" [class.selected]="selectedIndexSettings == i">
             <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
             <ion-label>{{ p.title }}</ion-label>
           </ion-item>

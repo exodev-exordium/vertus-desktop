@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PagesPage implements OnInit {
 
-  public selectedIndexPages = 0;
-  public selectedIndexSettings = 0;
+  public selectedIndexPages = -1;
+  public selectedIndexSettings = -1;
 
   public mainPages = [
     {
@@ -17,25 +17,33 @@ export class PagesPage implements OnInit {
       icon: 'laptop'
     },
     {
+      title: 'Connections',
+      url: '/pages/connections',
+      icon: 'server'
+    }
+  ];
+
+  public settingsPages = [
+    {
+      title: 'Settings',
+      url: '/pages/settings',
+      icon: 'cog'
+    },
+    {
+      title: 'Settings',
+      url: '/pages/settings',
+      icon: 'cog'
+    },
+    {
       title: 'Settings',
       url: '/pages/settings',
       icon: 'cog'
     }
   ];
 
-  public settingsPages = [
-
-  ];
-
   constructor() { }
 
   ngOnInit() {
-    /*
-    const path = window.location.pathname.split('folder/')[1];
-    if (path !== undefined) {
-      this.selectedIndex = this.appPages.findIndex(page => page.title.toLowerCase() === path.toLowerCase());
-    }
-    */
   }
 
 }
