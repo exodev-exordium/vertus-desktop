@@ -30,14 +30,9 @@ export class PagesPage implements OnInit {
       icon: 'cog'
     },
     {
-      title: 'Settings',
+      title: 'Signout',
       url: '/pages/settings',
-      icon: 'cog'
-    },
-    {
-      title: 'Settings',
-      url: '/pages/settings',
-      icon: 'cog'
+      icon: 'log-out'
     }
   ];
 
