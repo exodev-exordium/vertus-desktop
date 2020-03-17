@@ -11,7 +11,11 @@
     "type": "git",
     "url": "git+https://github.com/exordium-dev/vertus-desktop/exordium-desktop.git"
   },
-  "author": "Odyssey <odyssey@exordium.dev> (https://exordium.dev)",
+  "author": {
+    "name": "FearGannicus",
+    "email": "gannicus@exordium.dev",
+    "url": "https://exordium.dev"
+  },
   "bugs": {
     "url": "https://github.com/exordium-dev/vertus-desktop/issues"
   },
